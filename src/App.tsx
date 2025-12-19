@@ -1,17 +1,14 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
-import { HomeIcons } from "./components/HomeIcons";
+import { Home } from "./pages/Home";
 
 function App() {
   return (
-    <div className="app">
-      <main className="app-main">
-        <section className="card">
-          {/* <header className="app-header"></header> */}
-          <p>בחרו פעולה כדי להתחיל:</p>
-          <HomeIcons />
-        </section>
-      </main>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

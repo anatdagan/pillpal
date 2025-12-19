@@ -15,14 +15,11 @@ body {
   direction: rtl;
   display: flex;
   justify-content: center;
-  align-items: center;
-  padding: 1.5rem;
+  padding: 4.5rem 1.5rem 1.5rem;
 }
 
 .app {
   position: relative;
-  background-repeat: no-repeat;
-  background-image: url("./components/logo.png");
   width: 100%;
   max-width: 420px;
   height: 95vh;
@@ -38,20 +35,45 @@ body {
 }
 
 .app-header {
-  height: 50px;
-  margin-bottom: 1.5rem;
-  color: #e5e7eb;
+  position: fixed;
+  top: 0;
+  inset-inline: 0;
+  height: 3.5rem;
+  padding: 0 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  background-color: #ffffff;
+  color: #111827;
+  box-shadow: 0 2px 6px rgba(15, 23, 42, 0.12);
+  z-index: 10;
 }
 
-.app-header h1 {
-  font-size: 2.5rem;
-  color: #2563eb;
-  letter-spacing: -0.03em;
-  margin-bottom: 0.5rem;
+.header-logo img {
+  display: block;
+  height: 40px;
+  width: auto;
 }
 
-.app-header p {
-  color: #4b5563;
+.header-avatar {
+  border: none;
+  padding: 0;
+  margin: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.9);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(15, 23, 42, 0.2);
+}
+
+.header-avatar-initial {
+  font-weight: 600;
+  color: #1f2933;
 }
 
 .app-main {
