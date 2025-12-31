@@ -1,0 +1,30 @@
+/* src/components/ui/TextField.css */
+
+.text-field-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+  
+.text-field-label {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #374151;
+}
+  
+.text-field-input {
+    padding: 0.75rem 1rem;
+    border-radius: 0.75rem;
+    border: 1px solid #e5e7eb;
+    background: #f9fafb;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+    outline: none;
+    width: 100%; /* Ensure it fills container */
+}
+  
+.text-field-input:focus {
+    background: #ffffff;
+    border-color: #25e2eb;
+    box-shadow: 0 0 0 3px rgba(37, 226, 235, 0.15);
+}

@@ -1,0 +1,65 @@
+/* src/components/ui/DatePicker.css */
+
+.date-picker-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+}
+
+.date-picker-label {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #374151;
+}
+
+.date-picker-container {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.date-select {
+    display: block;
+    width: 100%;
+    padding: 0.75rem 0.5rem; /* Matches .form-input but simplified */
+    font-size: 0.8rem;
+    line-height: 1.5;
+    color: #111827;
+    background-color: #f9fafb;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+    background-position: left 0.5rem center;
+    background-repeat: no-repeat;
+    background-size: 1.5em 1.5em;
+    padding-left: 2rem; /* Space for icon if RTL */
+    border: 1px solid #e5e7eb;
+    border-radius: 0.75rem;
+    appearance: none;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+/* RTL Adjustments for Hebrew */
+html[dir="rtl"] .date-select {
+    background-position: left 0.5rem center;
+    padding-right: 0.75rem;
+    padding-left: 2rem;
+}
+
+.date-select:focus {
+    background-color: #ffffff;
+    border-color: #25e2eb;
+    box-shadow: 0 0 0 3px rgba(37, 226, 235, 0.15);
+    outline: none;
+}
+
+.date-select.day {
+    flex: 2;
+}
+
+.date-select.month {
+    flex: 3;
+}
+
+.date-select.year {
+    flex: 2.5;
+}
