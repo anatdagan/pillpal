@@ -184,3 +184,22 @@ body {
 .centered {
   text-align: center;
 }
+
+.side-effects-container {
+  height: 100%;
+  margin: 4rem;
+  padding: 4rem;
+}
+.info {
+  margin: 2rem;
+  border: 1px solid #2563eb;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttons button {
+  width: 4rem;
+}

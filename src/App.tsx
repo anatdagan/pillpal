@@ -7,10 +7,10 @@ import { AuthProvider } from "./context/AuthContext";
 import { MedicationsProvider } from "./context/MedicationsContext";
 import { SpecialDates } from "./pages/SpecialDates";
 import { Scan } from "./pages/Scan";
-import { Report } from "./pages/Report";
 import { Medications } from "./pages/Medications";
 import AlertSim from "./pages/AlertSim";
 import ScannedMed from "./pages/ScannedMed";
+import SideEffects from "./pages/SideEffects";
 
 function App() {
   return (
@@ -25,7 +25,7 @@ function App() {
                 <Route path="/register" element={<Register />} />
                 <Route path="/special-dates" element={<SpecialDates />} />
                 <Route path="/scan" element={<Scan />} />
-                <Route path="/report" element={<Report />} />
+                <Route path="/report" element={<SideEffects />} />
                 <Route path="/medications" element={<Medications />} />
                 <Route path="/alert" element={<AlertSim />} />
                 <Route path="/scanned-med" element={<ScannedMed />} />
