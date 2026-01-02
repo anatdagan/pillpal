@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
 import { useForm } from "react-hook-form";
+import { Card } from "../components/ui/Card";
 export function Login() {
   const navigate = useNavigate();
   const { login } = useAuth();
@@ -22,7 +23,7 @@ export function Login() {
 
   return (
     <>
-      <section className="card login-container">
+      <Card className="login-container">
         <form className="login-form" onSubmit={handleSubmit(onSubmit)}>
           <div className="form-group">
             <label htmlFor="email" className="form-label">
@@ -82,7 +83,7 @@ export function Login() {
             </button>
           </div>
         </form>
-      </section>
+      </Card>
     </>
   );
 }
