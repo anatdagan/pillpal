@@ -1,7 +1,10 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { Card } from "../components/ui/Card"; 
 
 function SideEffects() {
   const [showInfo, setShowInfo] = useState(false);
+  const navigate = useNavigate();
   function onClickHandler() {
     setShowInfo(true);
   }
@@ -16,14 +19,14 @@ function SideEffects() {
   }
   return (
     <div className="side-effects-container">
-      <section className="card">
+      <Card isClosable={true} onClose={() => navigate("/")}>
         <p>תאר את תופעת הלוואי שהרגשת:</p>
         <textarea rows={5} cols={30}></textarea>
         <div className="buttons">
           <button onClick={onClickHandler}>סיימתי</button>
           <button onClick={reset}>נקה</button>
         </div>
-      </section>
+      </Card>
 
       {showInfo && (
         <section className="card info">

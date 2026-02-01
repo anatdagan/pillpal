@@ -64,6 +64,9 @@ export function MedicationsProvider({ children }: { children: ReactNode }) {
   }, [medications]);
 
   const addMedication = (medication: Omit<Medication, "id">) => {
+    if (medications.find((med) => med.name === medication.name)) {
+      return;
+    }
     const newMedication: Medication = {
       ...medication,
       id: Date.now().toString() + Math.random().toString(36).substr(2, 9),

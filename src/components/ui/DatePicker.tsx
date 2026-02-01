@@ -72,7 +72,7 @@ export function DatePicker({ value, onChange, label, required }: DatePickerProps
     { value: 11, label: "נובמבר" },
     { value: 12, label: "דצמבר" },
   ];
-  const years = Array.from({ length: 120 }, (_, i) => currentYear - i);
+  const years = Array.from({ length: 120 }, (_, i) => currentYear + 10- i);
 
   return (
     <div className="date-picker-group">

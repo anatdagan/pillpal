@@ -18,6 +18,7 @@ function AuthForm({onSubmit}: {onSubmit: () => void}) {
           label="סיסמה"
           id="password"
           placeholder="********"
+          type="password"
           required
         />
       </div>
@@ -26,6 +27,7 @@ function AuthForm({onSubmit}: {onSubmit: () => void}) {
           label="אימות סיסמה"
           id="passwordConfirm"
           placeholder="********"
+          type="password"
           required
         />
       </div>    

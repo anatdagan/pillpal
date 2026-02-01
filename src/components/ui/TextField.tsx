@@ -14,6 +14,7 @@ export default function TextField({ label, id, className = "", ...props }: TextF
       <input
         id={id}
         className={`text-field-input ${className}`}
+        autoComplete="off"
         {...props}
       />
     </div>
